@@ -1,0 +1,10 @@
+{
+  "fold": 0,
+  "random_state": 12345,
+  "plans_file_path": "/net/scratch/people/plgztabor/DATA_24.05.2023/PREPROCESSED/nnUNetPlansv2.1_plans_3D.pkl",
+  "folder_with_preprocessed_data": "/net/scratch/people/plgztabor/DATA_24.05.2023/PREPROCESSED/nnUNetData_plans_v2.1_stage0",
+  "network_type": "3d_fullres",
+  "architecture_name": "Generic_UNet"
+
+}
+
