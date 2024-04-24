@@ -1,0 +1,17 @@
+{
+  "architecture_name":"Generic_UNet",
+  "encoder_type":"resnet34",  
+  "disable_tta": false,
+  "network_type": "2d",
+  "input_folder": "/net/tscratch/people/plgztabor/KNEE_MV/images",
+  "output_folder": "/net/tscratch/people/plgztabor/KNEE_MV/predictions_SP",
+  "plans_file_path": "/net/tscratch/people/plgztabor/Task031_KNEE_SP/preprocessed/nnUNetPlansv2.1_plans_2D.pkl",
+  "checkpoints": 
+  {
+   "1": "/net/tscratch/people/plgztabor/Task031_KNEE_SP/models/fold_0_model_best.model",
+   "2": "/net/tscratch/people/plgztabor/Task031_KNEE_SP/models/fold_1_model_best.model",
+   "3": "/net/tscratch/people/plgztabor/Task031_KNEE_SP/models/fold_2_model_best.model",
+   "4": "/net/tscratch/people/plgztabor/Task031_KNEE_SP/models/fold_3_model_best.model",
+   "5": "/net/tscratch/people/plgztabor/Task031_KNEE_SP/models/fold_4_model_best.model"
+  }
+}

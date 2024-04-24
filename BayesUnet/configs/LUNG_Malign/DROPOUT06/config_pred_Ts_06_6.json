@@ -1,0 +1,17 @@
+{
+  "disable_tta": true,
+  "network_type": "3d_fullres",
+  "input_folder": "/net/tscratch/people/plgsliwinska/venv/LUNG_Malign/imagesTs",
+  "output_folder": "/net/tscratch/people/plgsliwinska/venv/LUNG_Malign/DROPOUT06/predsTs_6",
+  "plans_file_path": "/net/tscratch/people/plgsliwinska/venv/LUNG/preprocessed/nnUNetPlansv2.1_plans_3D.pkl",
+  "checkpoints": 
+  {
+   "1": "/net/tscratch/people/plgsliwinska/venv/LUNG_Malign/DROPOUT06/MODELS/fold_0_model_best.model",
+   "2": "/net/tscratch/people/plgsliwinska/venv/LUNG_Malign/DROPOUT06/MODELS/fold_1_model_best.model",
+   "3": "/net/tscratch/people/plgsliwinska/venv/LUNG_Malign/DROPOUT06/MODELS/fold_2_model_best.model",
+   "4": "/net/tscratch/people/plgsliwinska/venv/LUNG_Malign/DROPOUT06/MODELS/fold_3_model_best.model",
+   "5": "/net/tscratch/people/plgsliwinska/venv/LUNG_Malign/DROPOUT06/MODELS/fold_4_model_best.model"
+  },
+
+  "dropout_p": 0.6
+}

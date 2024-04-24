@@ -1,0 +1,13 @@
+{
+  "default_num_threads": 8,
+  "dont_run_preprocessing": false,
+  "tl": 8,
+  "tf": 8,
+  "planner_name3d": "ExperimentPlanner3D_v21",
+  "planner_name2d": "None",
+  "verify_dataset_integrity_flag": true,
+  "random_state": 12345,
+  "preprocessing_output_dir": "/net/tscratch/people/plgsliwinska/venv/dataSegm/preprocessed/",
+  "folder_with_raw_data": "/net/tscratch/people/plgsliwinska/venv/dataSegm/",
+  "folder_with_cropped_data": "/net/tscratch/people/plgsliwinska/venv/dataSegm/cropped/"
+}

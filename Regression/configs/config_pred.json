@@ -1,0 +1,15 @@
+{
+  "disable_tta": true,
+  "network_type": "3d_fullres",
+  "input_folder": "/net/tscratch/people/plgztabor/DATA/tmp/",
+  "output_folder": "/net/tscratch/people/plgztabor/DATA/predictionsTr/",
+  "plans_file_path": "/net/tscratch/people/plgztabor/DATA/PREPROCESSED/modified_nnUNetPlansv2.1_plans_3D.pkl",
+  "checkpoints": 
+  {
+   "1": "/net/tscratch/people/plgztabor/DATA/MODELS/fold_0_model_best.model",
+   "2": "/net/tscratch/people/plgztabor/DATA/MODELS/fold_1_model_best.model",
+   "3": "/net/tscratch/people/plgztabor/DATA/MODELS/fold_2_model_best.model",
+   "4": "/net/tscratch/people/plgztabor/DATA/MODELS/fold_3_model_best.model",
+   "5": "/net/tscratch/people/plgztabor/DATA/MODELS/fold_4_model_best.model"
+  }
+}

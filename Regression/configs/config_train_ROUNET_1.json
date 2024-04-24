@@ -1,0 +1,28 @@
+{
+  "fold": 1,
+  "random_state": 12345,
+  "plans_file_path": "/net/scratch/people/plgztabor/DoseModel/DATA/PREPROCESSED/modified_nnUNetPlansv2.1_plans_3D.pkl",
+  "folder_with_preprocessed_data": "/net/scratch/people/plgztabor/DoseModel/DATA/PREPROCESSED/nnUNetData_plans_v2.1_stage0",
+  "deep_supervision": false,
+
+  "output_folder": "/net/scratch/people/plgztabor/DoseModel/MODELS/ROUNET/",
+  "log_file": "/net/scratch/people/plgztabor/DoseModel/MODELS/ROUNET/log1.txt", 
+
+  "network_type": "3d_fullres",
+  "architecture_name": "Robust_UNet",
+
+  "weight_decor": 1000.0,
+  "weight_recon": 1.0,
+  "weight_latent": 100.0,
+
+  "initial_lr": 0.01,
+  "momentum": 0.99,
+  "nesterov": true,
+  "numOfEpochs": 1000,
+  "tr_batches_per_epoch": 250,
+  "val_batches_per_epoch": 50,
+  "checkpoint_frequency": 10,
+  "continue_training":true, 
+  "checkpoint": "/net/scratch/people/plgztabor/DoseModel/MODELS/ROUNET/fold_1_model_best.model"
+}
+

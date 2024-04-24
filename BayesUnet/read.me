@@ -1,0 +1,41 @@
+# in Cyfronet:
+# srun --gres=gpu:1 -p plgrid-gpu-v100 -t 12:00:00 -N 1 -n 6 -A plgonwelo  --pty /bin/bash -l
+
+#tested for libraries
+
+# module load plgrid/libs/tensorflow-gpu/latest-python-3.8
+batchgenerators               0.23
+scikit-image                  0.17.2
+numpy                         1.21.2
+SimpleITK                     2.0.2 
+torch                         1.6.0
+typing                        3.7.4.1
+scipy                         1.6.3
+nibabel                       3.2.1
+pycimg                        1.0.2
+
+#module load plgrid/tools/python/3.7
+batchgenerators               0.20.1 ?? some class is not present, newer version must be used
+scikit-image                  0.16.2
+numpy                         1.19.5
+SimpleITK                     1.2.
+torch                         1.6.0
+typing                        3.7.4.1
+scipy                         1.4.1
+nibabel                       3.0.1
+pycimg                        1.0.2
+#
+
+#Processing pipeline:
+#Preprocessing
+python3 run_preprocessing.py --config ./configs/config_prep_007.json
+
+#Training for 5 folds; change 'fold' argument in config file to 0, 1, 2, 3, and 4. Five models are then created.
+# One may train a single model, but it decreases prediction accuracy
+python3 run_training.py --config ./configs/config_train_007.json
+
+
+#Inference
+python3 run_predict --config ./configs/config_pred_007.json
+
+w segmentation_export.py linia 132 - wskazuję numer kanału do zapisania

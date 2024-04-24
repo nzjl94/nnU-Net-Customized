@@ -1,0 +1,23 @@
+{
+  "fold": 0,
+  "random_state": 12345,
+  "plans_file_path": "/net/pr1/plgrid/plggonwelo/fromScratch/DoseModel/DATA/PREPROCESSED/modified_nnUNetPlansv2.1_plans_3D.pkl",
+  "folder_with_preprocessed_data": "/net/pr1/plgrid/plggonwelo/fromScratch/DoseModel/DATA/PREPROCESSED/nnUNetData_plans_v2.1_stage0",
+  "deep_supervision": false,
+
+  "output_folder": "/net/pr1/plgrid/plggonwelo/fromScratch/DoseModel/MODELS/",
+  "log_file": "/net/pr1/plgrid/plggonwelo/fromScratch/DoseModel/MODELS/logDum_0.txt", 
+
+  "network_type": "3d_fullres",
+  "architecture_name": "Generic_UNet",
+  "initial_lr": 0.01,
+  "momentum": 0.99,
+  "nesterov": true,
+  "numOfEpochs": 1000,
+  "tr_batches_per_epoch": 250,
+  "val_batches_per_epoch": 50,
+  "checkpoint_frequency": 10,
+  "continue_training":false, 
+  "checkpoint": ""
+}
+
